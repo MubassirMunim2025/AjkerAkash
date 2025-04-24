@@ -1,0 +1,67 @@
+<html>  
+<head>
+    <title>আজকের আকাশ | Today's Sky</title>
+    <link rel="icon" href="https://img.icons8.com/emoji/48/cloud-emoji.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Open+Sans&display=swap" rel="stylesheet">
+    <meta property="og:title" content="আজকের আকাশ | Country Weather Explorer">
+    <meta property="og:description" content="Explore any country's weather and details with a simple search.">
+    <meta property="og:image" content="https://img.icons8.com/emoji/96/cloud-emoji.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Baloo 2', cursive;
+            background: linear-gradient(to right, #e0f7fa, #fffde7);
+        }
+        .navbar h1 {
+            font-family: 'Baloo 2', cursive;
+            font-size: 2.5rem;
+            color: #e6eff5;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <img src="https://img.icons8.com/emoji/48/cloud-emoji.png" alt="Logo" class="nav-logo">
+            <h1>আজকের আকাশ</h1>
+            <span class="tagline">Explore the sky above every nation</span>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section class="search-section">
+            <h2>Search for a Country</h2>
+            <form class="search-form" id="search-form">
+                <input type="text" id="country-input" placeholder="Enter country name..." required>
+                <button type="submit">Search</button>
+            </form>
+            <div class="error-message" id="error-message"></div>
+        </section>
+        
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Loading countries...</p>
+        </div>
+        
+        <div class="results" id="results"></div>
+    </div>
+    <div class="modal" id="country-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <div id="modal-content-container"></div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 আজকের আকাশ </p>
+        <p>Made With Love By Munim</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
