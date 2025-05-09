@@ -2,6 +2,8 @@
 
 Welcome to **আজকের আকাশ** (Ajker Aksha) - a web application that allows users to explore country details along with current weather data. This application provides a user-friendly interface to search for countries and view essential information such as capital, population, languages, currencies, and current weather in a selected country's capital.☁☁☁
 
+https://ajkerakash.netlify.app/
+
 ---
 
 ## Features
